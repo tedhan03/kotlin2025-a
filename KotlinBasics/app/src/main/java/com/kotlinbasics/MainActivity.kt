@@ -31,6 +31,30 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+
+private fun week02Functions() {
+    /*println("Week 02: Functions")
+    fun greet(name:String) = "Hello, $name!"
+    println(greet("Android developer"))
+    */
+    println("== Kotlin Functions ==")
+    fun greet(name: String):String{
+        return "Hello,$name!"
+    }
+    fun add(a: Int,b: Int) = a+ b
+
+    fun introduce(name: String,age: Int= 19){
+        println("My name is $name and I'm $age years old")
+        println()
+    }
+
+    println(greet("Kotlin"))
+    println("Sum: ${add(5,-71)}")
+    introduce("Kim",7)
+
+}
+
 private fun week02Variables(){
     /*println("Week 02: Variables")
 
@@ -58,9 +82,6 @@ private fun week02Variables(){
     var nickname: String? = null
     nickname = "mirae"
     println("Nickname: ${nickname?.length}")
-
-
-
 
 }
 
